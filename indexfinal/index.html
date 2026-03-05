@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Walking Pad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">Walking pad</h1>
+
+<div class="container">
+
+  <!-- WALK SECTION -->
+  <div class="walk-box">
+    <div class="walk-title">WALK</div>
+    <div>Speed: <span id="speedVal">0.00</span> m/s</div>
+    <div>Distance: <span id="distanceVal">0.00</span> m</div>
+  </div>
+
+  <!-- LEFT / CHARACTER / RIGHT -->
+  <div class="row">
+
+    <div class="side left">
+      <div class="label">LEFT</div>
+      <div id="leftVal">0.00</div>
+    </div>
+
+    <img id="character"
+         src="assets/animations/walk/north/frame_000.png">
+
+    <div class="side right">
+      <div class="label">RIGHT</div>
+      <div id="rightVal">0.00</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
